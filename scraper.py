@@ -18,7 +18,7 @@ listinfo = root.cssselect("div.user-list-info")
 #user_search_results > div.user-list > div:nth-child(1) > div.user-list-info
 for user in listinfo:
   print user
-  print user.text()
+  print user.text
 #
 # # Write out to the sqlite database using scraperwiki library
 #scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
